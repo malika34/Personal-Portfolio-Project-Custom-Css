@@ -1,0 +1,61 @@
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg-color);
+    padding: 2rem 9%;
+    z-index: 1000;
+    height: 80px;
+    opacity: 1;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.header.animateHeader {
+    opacity: 0;
+    transform: translateY(-100%);
+}
+
+.header.animateHeader.animateHeaderDone {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.menuIcon {
+    font-size: 4rem;
+    display: none;
+    cursor: pointer;
+}
+
+.logo {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--text-white);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav a {
+    font-size: 2rem;
+    color: var(--text-white);
+    font-weight: 400;
+    margin-left: 3.5rem;
+    transition: 0.5s;
+}
+
+.nav a:hover,
+.nav a.active {
+    color: var(--main-color);
+}
+
+@media screen and (max-width: 768px) {
+    .menuIcon {
+        display: block;
+    }
+}
