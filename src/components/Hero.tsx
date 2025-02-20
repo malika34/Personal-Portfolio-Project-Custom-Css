@@ -12,21 +12,21 @@ const Hero = () => {
           {/* Dynamic job titles with styling and animation */}I am a{" "}
           <span
             style={{ "--i": 3 } as React.CSSProperties}
-            data-text="Web Developer"
+            data-text="Frontend Engineer"
           >
-            Web Developer
+            Frontend Engineer
           </span>
           <span
             style={{ "--i": 2 } as React.CSSProperties}
-            data-text="Web Designer"
+            data-text="Next.js Developer"
           >
-            Web Designer
+            Next.js Developer
           </span>
           <span
             style={{ "--i": 1 } as React.CSSProperties}
-            data-text="Generative AI Explorer"
+            data-text="UI/UX Developer"
           >
-            Generative AI Explorer
+            UI/UX Developer
           </span>
         </h2>
         <p>
@@ -36,7 +36,7 @@ const Hero = () => {
 
         <div className={styles.btnSci}>
           {/* Button to download CV */}
-          <Link href="/Cv.pdf" className={styles.btn} target="_blank">
+          <Link href="/Malik-Resume.pdf" className={styles.btn} target="_blank">
             Download CV
           </Link>
           <div className={styles.sci}>

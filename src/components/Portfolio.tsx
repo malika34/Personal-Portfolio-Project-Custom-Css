@@ -24,15 +24,26 @@ const Portfolio = () => {
       numb: "02",
       title: "Frontend Project",
       description:
-        "Built a static blog site for reading articles, optimized for performance with Next.js and styled with Tailwind CSS for a modern look.",
-      tech: "Next.js, TailwindCss",
-      liveLink: "https://next-js-remark-rehype-blog-website.vercel.app/",
+        "Developed a full-featured e-commerce site with product listings, shopping cart, and checkout functionality using Nextjs.",
+      tech: "Nextjs, TailwindCss",
+      liveLink:
+        "https://hackathon-ecommerce-st-git-fcf90d-malik-musadiq-ahmeds-projects.vercel.app/",
       githubLink:
-        "https://github.com/malika34/Next.js-remark-rehype-blog-website.git",
-      image: "/project 2.png",
+        "https://github.com/malika34/Hackathon-Ecommerce-Store/tree/milestone-3",
+      image: "/project 6.png",
     },
     {
       numb: "03",
+      title: "Frontend Project",
+      description:
+        "Built a dynamic blog site for reading articles, optimized for performance with Next.js and styled with Tailwind CSS for a modern look.",
+      tech: "Next.js, TailwindCss",
+      liveLink: "https://malik-blog.vercel.app/",
+      githubLink: "https://github.com/malika34/Blog-Website",
+      image: "/project 2.png",
+    },
+    {
+      numb: "04",
       title: "Frontend Project",
       description:
         "Build a fully responsive, interactive resume builder that allows users to create and customize professional resumes.",
@@ -42,24 +53,14 @@ const Portfolio = () => {
       image: "/project 3.png",
     },
     {
-      numb: "04",
+      numb: "05",
       title: "Frontend Project",
       description:
         "Build a fully responsive, static Netflix clone with a modern UI and intuitive layout using only HTML and CSS.",
       tech: "HTML5, CSS3",
       liveLink: "https://netflix-pk-malik.vercel.app/",
-      githubLink: "https://github.com/malika34/Netflix-Clone-Html-Css.git",
+      githubLink: "https://github.com/malika34/Netflix-Clone-Html-Css",
       image: "/project 4.png",
-    },
-    {
-      numb: "05",
-      title: "Frontend Project",
-      description:
-        "Build a fully responsive, static website for showcasing skills and featuring a clean design using only Next.js and Tailwind Css.",
-      tech: "Next.js, TailwindCss",
-      liveLink: "https://pwskills-website.vercel.app/",
-      githubLink: "https://github.com/malika34/pwskills-website.git",
-      image: "/project 5.png",
     },
   ];
 

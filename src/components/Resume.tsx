@@ -5,7 +5,7 @@ import styles from "@/components/Resume.module.css";
 import Image from "next/image";
 
 const Resume = () => {
-  const [activeSection, setActiveSection] = useState("experience");
+  const [activeSection, setActiveSection] = useState("education");
 
   return (
     <section className={`${styles.section} ${styles.resume} ${styles.active}`}>
@@ -16,14 +16,6 @@ const Resume = () => {
             Hire me because I am committed to providing you with user-focused,
             high-quality web solutions.
           </p>
-          <button
-            className={`${styles.resumeBtn} ${
-              activeSection === "experience" ? styles.active : ""
-            }`}
-            onClick={() => setActiveSection("experience")}
-          >
-            Experience
-          </button>
           <button
             className={`${styles.resumeBtn} ${
               activeSection === "education" ? styles.active : ""
@@ -50,56 +42,6 @@ const Resume = () => {
           </button>
         </div>
         <div className={styles.resumeBox}>
-          {/* Experience */}
-          {activeSection === "experience" && (
-            <div className={`${styles.resumeDetail} ${styles.experience}`}>
-              <h2 className={styles.heading}>
-                My <span>Experience</span>
-              </h2>
-              <p className={styles.desc}>
-                My Experience Applying Knowledge to Have an Impact in the Real
-                World
-              </p>
-              <div className={styles.resumeList}>
-                <div className={styles.resumeItem}>
-                  <p className={styles.year}>2024 - Present</p>
-                  <h3>Frontend Developer</h3>
-                  <p className={styles.company}>ABC Corp.</p>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Rerum maxime magnam nobis eum, maiores quam.
-                  </p>
-                </div>
-                <div className={styles.resumeItem}>
-                  <p className={styles.year}>2022 - 2023</p>
-                  <h3>Backend Developer</h3>
-                  <p className={styles.company}>BBC Solutions.</p>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Rerum maxime magnam nobis eum, maiores quam.
-                  </p>
-                </div>
-                <div className={styles.resumeItem}>
-                  <p className={styles.year}>2021 -2022</p>
-                  <h3>Full-Stack Developer</h3>
-                  <p className={styles.company}>BBC Solutions.</p>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Rerum maxime magnam nobis eum, maiores quam.
-                  </p>
-                </div>
-                <div className={styles.resumeItem}>
-                  <p className={styles.year}>2020 - 2021</p>
-                  <h3>Mern-Stack-Developer</h3>
-                  <p className={styles.company}>BMC Corp.</p>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Rerum maxime magnam nobis eum, maiores quam.
-                  </p>
-                </div>
-              </div>
-            </div>
-          )}
           {/* Education */}
           {activeSection === "education" && (
             <div className={`${styles.resumeDetail} ${styles.education}`}>
@@ -112,8 +54,8 @@ const Resume = () => {
               </p>
               <div className={styles.resumeList}>
                 <div className={styles.resumeItem}>
-                  <p className={styles.year}>(2024 - 2025) - Second Quarter</p>
-                  <h3>Certified Cloud Appled Gen Ai Engineer</h3>
+                  <p className={styles.year}>(2024 - 2025) - Third Quarter</p>
+                  <h3>Certified Cloud Appled Agentic Ai Engineer</h3>
                   <p className={styles.company}>Governor House</p>
                   <p>
                     currently enrolled in Certified Cloud Appled Gen Ai
@@ -121,8 +63,8 @@ const Resume = () => {
                   </p>
                 </div>
                 <div className={styles.resumeItem}>
-                  <p className={styles.year}>(2024 - 2028) - First Semester</p>
-                  <h3>Bachelors Software Engineering</h3>
+                  <p className={styles.year}>(2025 - 2028) - First Semester</p>
+                  <h3>Bachelors Computer Science</h3>
                   <p className={styles.company}>Virtual-University-Pakistan</p>
                   <p>
                     currently engaged on a software engineering bachelors
@@ -242,12 +184,7 @@ const Resume = () => {
                     <span>Pakistan</span>
                   </p>
                 </div>
-                <div className={styles.resumeItem}>
-                  <p>
-                    Experience
-                    <span>1+ Year</span>
-                  </p>
-                </div>
+
                 <div className={styles.resumeItem}>
                   <p>
                     Full Time
